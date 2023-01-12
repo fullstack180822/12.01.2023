@@ -23,5 +23,8 @@ describe('Testing basic functionality of the calculator' ,() => {
         //assert.strictEqual(expected , actual)
         expect(expected).to.equal(actual)
     })
-
+    // it ('multiply 2 numbers')
+    // it ('multiply zero with non-zero')
+    // it ('div 2 numbers')
+    // it ('div zero with non-zero')
 })

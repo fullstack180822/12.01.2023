@@ -12,6 +12,11 @@ const sub = (num1, num2) => {
     return num1 - num2
 }
 
+// add this:
+// mul
+// div 
+
 module.exports = {
     add, sub
+    //, mul, div
 }
