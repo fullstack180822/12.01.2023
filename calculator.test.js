@@ -28,6 +28,12 @@ describe('Testing basic functionality of the calculator' ,() => {
     // it ('multiply zero with non-zero')
     // it ('div 2 numbers')
     // it ('div zero with non-zero')
+    it('adding non-zero number to zero [1 / 0] creates an Error', () => {
+        assert.throws(() =>{
+            calc.div(3, 0)
+        })
+        // A A A
+    })
 })
 
 
