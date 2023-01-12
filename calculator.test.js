@@ -1,6 +1,7 @@
 const assert = require('assert')
 const expect = require('chai').expect
 const calc = require('./calculator')
+const axios = require('axios')
 
 describe('Testing basic functionality of the calculator' ,() => {
 
@@ -27,4 +28,15 @@ describe('Testing basic functionality of the calculator' ,() => {
     // it ('multiply zero with non-zero')
     // it ('div 2 numbers')
     // it ('div zero with non-zero')
+})
+
+
+describe('Async await with axios' ,() => {
+
+    it('adding simple numbers [1 + 1]', async () => {
+        // A A A
+        const res = await axios.get('http://httpbin.org/get?answer=42');
+        //console.log(res.data);
+        expect(res.data.args.answer).to.equal('42')
+    })
 })
